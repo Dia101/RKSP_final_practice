@@ -1,10 +1,10 @@
 services:
   postgresql:
-    container_name: ms_pg_sql
+    container_name: rksp_pr_8_postgres
     image: postgres
     environment:
-      POSTGRES_USER: alibou
-      POSTGRES_PASSWORD: alibou
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
       PGDATA: /data/postgres
     volumes:
       - postgres:/data/postgres
@@ -16,7 +16,7 @@ services:
     restart: unless-stopped
 
   pgadmin:
-    container_name: ms_pgadmin
+    container_name: rksp_pr_8_pgadmin
     image: dpage/pgadmin4
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
