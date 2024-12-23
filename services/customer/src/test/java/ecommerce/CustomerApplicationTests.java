@@ -1,9 +1,7 @@
 package ecommerce;
 
-import com.alibou.ecommerce.customer.*;
 import customer.customer.*;
 import customer.exception.CustomerNotFoundException;
-import configserver.alibou.ecommerce.customer.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

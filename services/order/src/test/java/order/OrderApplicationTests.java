@@ -1,15 +1,12 @@
 package order;
 
-import com.alibou.ecommerce.customer.Customer;
 import order.customer.CustomerClient;
 import order.exception.BusinessException;
 import order.kafka.OrderProducer;
-import com.alibou.ecommerce.order.*;
 import order.orderline.OrderLineService;
 import order.payment.PaymentClient;
 import order.product.ProductClient;
 import order.product.PurchaseRequest;
-import configserver.alibou.ecommerce.order.*;
 import jakarta.persistence.EntityNotFoundException;
 import order.order.*;
 import org.junit.jupiter.api.BeforeEach;

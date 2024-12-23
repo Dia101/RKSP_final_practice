@@ -50,7 +50,7 @@ public class EmailService {
         context.setVariables(variables);
         messageHelper.setSubject(EmailTemplates.PAYMENT_CONFIRMATION.getSubject());
 
-        try {
+        try{
             String htmlTemplate = templateEngine.process(templateName, context);
             messageHelper.setText(htmlTemplate, true);
 
